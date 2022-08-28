@@ -40,7 +40,7 @@ public class AlbumResource {
         return aserv.updateAlbumById(albumId, album);
     }
 
-    @DeleteMapping("/album")
+    @DeleteMapping("/album")//delete album
     public Album deleteAlbum(@RequestParam(name = "albumId") int albumId){
         return aserv.deleteAlbum(albumId);
     }
